@@ -1,0 +1,16 @@
+.Header {
+  .headerImage {
+    background-image: linear-gradient(to left, rgb(124, 197, 175), rgba(101, 187, 174, 0.79), rgba(24, 149, 199, 0.79)), url("../../assets/images/banner.jpg");
+    height: 230px;
+  }
+
+  h1 {
+    text-align: center;
+    padding-top: 90px;
+    color: white;
+    letter-spacing: 1rem;
+    text-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.342);
+  }
+}
+
+
