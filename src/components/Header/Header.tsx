@@ -1,4 +1,4 @@
-import React, {FC, useEffect} from 'react';
+import React, {FC} from 'react';
 import styles from './Header.module.scss';
 
 export interface HeaderProps {
@@ -8,16 +8,6 @@ export interface HeaderProps {
 const Header: FC<HeaderProps> = (props: HeaderProps) => {
 
     const {headerText} = props;
-
-    useEffect(
-        () => {
-            console.log(`Creating [Header] component with text: ${headerText}`)
-            return () => {
-                console.log(`Destroying [Header] component with text: ${headerText}`);
-            };
-        },
-        [headerText]
-    );
 
     return (
         <div className={styles.Header}>

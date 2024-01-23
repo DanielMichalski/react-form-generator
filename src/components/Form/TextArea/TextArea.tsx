@@ -1,4 +1,4 @@
-import React, {FC, useEffect} from 'react';
+import React, {FC} from 'react';
 import styles from './TextArea.module.scss';
 import {FormElement} from "../../../conteiners/FormElementsGenerator/FormElements/FormElement.model";
 
@@ -9,17 +9,6 @@ interface TextAreaProps {
 const TextArea: FC<TextAreaProps> = (props: TextAreaProps) => {
 
     const {model} = props;
-
-    useEffect(
-        () => {
-            console.log(`Creating [TextArea] component with label [${model.label}]`);
-
-            return () => {
-                console.log(`Destroying [TextArea] component with label [${model.label}]`);
-            };
-        },
-        [model.label]
-    );
 
     return (
         <div className={styles.TextArea}>

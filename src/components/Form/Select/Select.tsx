@@ -1,4 +1,4 @@
-import React, {FC, useEffect} from 'react';
+import React, {FC} from 'react';
 import styles from './Select.module.scss';
 import {FormElement} from "../../../conteiners/FormElementsGenerator/FormElements/FormElement.model";
 
@@ -12,17 +12,6 @@ const Select: FC<SelectProps> = (props: SelectProps) => {
 
     const {model} = props;
     const options = model.metadata.split(OPTIONS_SEPARATOR)
-
-    useEffect(
-        () => {
-            console.log(`Creating [Select] component with label [${model.label}]`);
-
-            return () => {
-                console.log(`Destroying [Select] component with label [${model.label}]`);
-            };
-        },
-        [model.label]
-    );
 
     return (
         <div className={styles.Select}>

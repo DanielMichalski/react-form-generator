@@ -15,17 +15,6 @@ const FormElements: FC<FormElementsProperties> = (props: FormElementsProperties)
 
     const {formElements, maxColumns} = props;
 
-    useEffect(
-        () => {
-            console.log(`Creating [FormElements] component`);
-
-            return () => {
-                console.log('Destroying [FormElements] component');
-            };
-        },
-        []
-    );
-
     const renderFormElement = (formElement: FormElement): ReactElement => {
         switch (formElement.type) {
             case FormElementType.TEXT_INPUT:

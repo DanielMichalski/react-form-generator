@@ -1,4 +1,4 @@
-import React, {FC, useEffect} from 'react';
+import React, {FC} from 'react';
 import styles from './TextInput.module.scss';
 import {FormElement} from "../../../conteiners/FormElementsGenerator/FormElements/FormElement.model";
 
@@ -9,17 +9,6 @@ interface TextInputProps {
 const TextInput: FC<TextInputProps> = (props: TextInputProps) => {
 
     const {model} = props;
-
-    useEffect(
-        () => {
-            console.log(`Creating [TextInput] component with label [${model.label}]`);
-
-            return () => {
-                console.log(`Destroying [TextInput] component with label [${model.label}]`);
-            };
-        },
-        [model.label]
-    );
 
     return (
         <div className={styles.TextInput}>
