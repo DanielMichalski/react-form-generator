@@ -10,7 +10,8 @@ Available form element types:
 - Select
 
 ## Screenshot
-![vide](https://github.com/DanielMichalski/react-form-generator/blob/master/screenshots/video.mp4 "Video")
+[video.mp4](screenshots%2Fvideo.mp4)
+![video.mp4](https://github.com/DanielMichalski/react-form-generator/blob/master/screenshots/video.mp4 "Video")
 
 ![screenshot](https://github.com/DanielMichalski/react-form-generator/blob/master/screenshots/screenshot.jpg "Screenshot")
 
