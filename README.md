@@ -1,17 +1,16 @@
 # React form form generator
-                   
-## Description
 
 `React Form Generator` is a React application that generates the HTML form from the requirements provided in text area.
+
+![video](https://github.com/DanielMichalski/react-form-generator/blob/master/.github/video.gif "Video")
+
+
+## Description
 
 Available form element types:
 - Text input
 - Text area
 - Select
-
-## Screenshot
-
-![video](https://github.com/DanielMichalski/react-form-generator/blob/master/.github/video.gif "Video")
 
 ## Available Scripts
 
